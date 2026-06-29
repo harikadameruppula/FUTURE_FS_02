@@ -2,6 +2,8 @@
 
 A full-stack Mini CRM (Customer Relationship Management) application built using React, Node.js, Express, and MySQL.
 
+---
+
 ## Features
 
 * Add new leads
@@ -11,6 +13,8 @@ A full-stack Mini CRM (Customer Relationship Management) application built using
 * Responsive frontend UI
 * REST API backend
 * MySQL database integration
+
+---
 
 ## Tech Stack
 
@@ -26,18 +30,26 @@ A full-stack Mini CRM (Customer Relationship Management) application built using
 * Express.js
 * MySQL
 
+---
+
 ## Project Structure
 
-* client → React frontend
-* server → Express backend
+* `client` → React frontend
+* `server` → Express backend
+
+---
 
 ## Live Demo
 
-Frontend:
+### Frontend
+
 https://mini-crm-harika.netlify.app
 
-Backend:
+### Backend
+
 Deployed on Render
+
+---
 
 ## Installation
 
@@ -47,7 +59,9 @@ Deployed on Render
 git clone https://github.com/harikadameruppula/FUTURE_FS_02.git
 ```
 
-### Frontend Setup
+---
+
+## Frontend Setup
 
 ```bash
 cd client
@@ -55,13 +69,17 @@ npm install
 npm start
 ```
 
-### Backend Setup
+---
+
+## Backend Setup
 
 ```bash
 cd server
 npm install
 node server.js
 ```
+
+---
 
 ## Database Setup
 
@@ -71,7 +89,9 @@ Create MySQL database:
 CREATE DATABASE crm_db;
 ```
 
-Create leads table and connect using your MySQL credentials.
+Create the `leads` table and connect using your MySQL credentials.
+
+---
 
 ## Author
 
