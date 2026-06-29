@@ -1,18 +1,21 @@
+require("dotenv").config();
+
 const mysql = require("mysql2");
 
-const connection = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "dbms26",
-    database: "mini_crm"
+const db = mysql.createConnection({
+  host: process.env.DB_HOST,
+  port: process.env.DB_PORT,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME
 });
 
-connection.connect((err) => {
-    if (err) {
-        console.log("Database Error:", err);
-    } else {
-        console.log("MySQL Connected");
-    }
+db.connect((err) => {
+  if (err) {
+    console.log("Database connection failed:", err);
+  } else {
+    console.log("Database connected");
+  }
 });
 
-module.exports = connection;
+module.exports = db;
